@@ -20,6 +20,8 @@ const errorSound = document.getElementById('error-sound');
             addTodoItem(todoText);
             //resetting the textField afterwards/
             todoInput.value = '';
+            //resetting the placeholder of the input to its original value
+            todoInput.placeholder = "Enter your todo item please";
             //play the ding sound
             buttonSound.play();
             // Disable the button
@@ -33,8 +35,8 @@ const errorSound = document.getElementById('error-sound');
             };
         }
         else if(todoText == false){
-            alert("The textfield is empty");
             errorSound.play();
+            todoInput.placeholder = "Please type a valid entry";
             addButton.disabled = true;
             addButton.classList.add('button-interval');
 

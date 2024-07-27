@@ -15,6 +15,11 @@ body {
     height: 100vh;
 }
 
+.logo{
+    width: 25%;
+    align-self: center;
+}
+
 #todo-container {
     background: #ffcc6e;
     padding: 20px;
@@ -25,6 +30,9 @@ body {
     max-height: 60vh;
     overflow-y: auto;
     margin-top: 0rem;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -40,21 +48,26 @@ h1 {
 
 #todo-input {
     padding: 10px;
-    margin-bottom: 10px;
     text-align: center;
     width: 11rem;
+    margin: auto;
+    border-radius: 1rem;
 }
 
 button {
     padding: 10px 15px;
     cursor: pointer;
-    background-color: #fcac00;
     font-family: "Shadows Into Light";
     font-size: medium;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 12px;
     margin-left: 2rem;
+    border: 2px outset black;
+    width: 8rem;
+    margin: 1rem auto;
+    background-color: #fcac00;
+ 
 }
 
 button:hover {
@@ -70,9 +83,9 @@ button:hover {
 .todo-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #efefef;
+    justify-content: space-between;
 }
 
 .todo-item.completed {
@@ -87,6 +100,8 @@ button:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: fit-content;
+    margin: 0;
 }
 
 .delete-btn:hover {

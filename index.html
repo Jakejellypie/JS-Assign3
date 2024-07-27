@@ -1,0 +1,28 @@
+<!--Vikramaaditya Mathur 200563277
+Zayan Khan 200580933
+Nic Smith 200530206-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--Creating an h1 element that contains the name for my todo List-->
+    <h1>My To-Do List</h1>
+    <div id="todo-container">
+        <!--Creating an input field that has a place-holder for end user.-->
+        <input type="text" id="todo-input" placeholder="Enter your todo item please">
+        <!--Creating a button to add items-->
+        <button id="add-todo">Add</button>
+        <!--Creating a list for all the items that will be added by the user.-->
+        <ul id="todo-list"></ul>
+    </div>
+    <!--creating audio tags for both button sounds and error sounds-->
+    <audio id="button-sound" src="sounds/ding.mp3"></audio>
+    <audio id = "error-sound" src ="sounds/error.mp3"></audio>
+</body>
+</html>

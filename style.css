@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 html{
     background-color: #f1b94065;
@@ -5,6 +6,7 @@ html{
 }
 
 body {
+    font-family: "Shadows Into Light";
     margin: 0;
     padding: 0;
     display: flex;
@@ -55,6 +57,7 @@ h1 {
 button {
     padding: 10px 15px;
     cursor: pointer;
+    font-family: "Shadows Into Light";
     font-size: medium;
     color: rgb(0, 0, 0);
     border: none;
